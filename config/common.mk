@@ -53,9 +53,12 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 endif
 endif
 
+# BootAnimation
+include vendor/milk/config/bootanimation.mk
+
 # Some permissions
 PRODUCT_COPY_FILES += \
-    vendor/blaze/config/permissions/privapp-permissions-lineagehw.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-lineagehw.xml
+    vendor/milk/config/permissions/privapp-permissions-lineagehw.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-lineagehw.xml
 
 # milk-specific init rc file
 PRODUCT_COPY_FILES += \
