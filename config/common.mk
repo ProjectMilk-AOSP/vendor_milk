@@ -165,6 +165,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     vendor/milk/build/target/product/security/milk
 
+# ThemeOverlays
+include packages/overlays/Themes/themes.mk
+
 #Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED ?= true
 ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED),true)
