@@ -25,7 +25,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.sys.strictmode.disable=true
 endif
 
 # Audio
-$(call inherit-product, vendor/blaze/audio/audio.mk)
+$(call inherit-product, vendor/milk/audio/audio.mk)
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
@@ -52,6 +52,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.ota.allow_downgrade=true
 endif
 endif
+
+# Some permissions
+PRODUCT_COPY_FILES += \
+    vendor/blaze/config/permissions/privapp-permissions-lineagehw.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-lineagehw.xml
 
 # milk-specific init rc file
 PRODUCT_COPY_FILES += \
