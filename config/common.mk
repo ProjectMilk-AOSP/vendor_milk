@@ -24,6 +24,9 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=1
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.sys.strictmode.disable=true
 endif
 
+# Audio
+$(call inherit-product, vendor/blaze/audio/audio.mk)
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/milk/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
@@ -205,3 +208,7 @@ PRODUCT_COPY_FILES += \
 endif
 
 include vendor/milk/config/version.mk
+
+# Sounds (default)
+PRODUCT_PROPERTY_OVERRIDES := \
+    ro.config.ringtone=vibe.ogg
