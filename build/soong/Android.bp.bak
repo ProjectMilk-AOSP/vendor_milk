@@ -54,7 +54,7 @@ cc_library_headers {
 soong_config_module_type {
     name: "camera_needs_client_info",
     module_type: "cc_defaults",
-    config_namespace: "blazeGlobalVars",
+    config_namespace: "milkGlobalVars",
     bool_variables: ["camera_needs_client_info"],
     properties: [
         "cppflags",
@@ -280,6 +280,27 @@ bootloader_message_offset {
         bootloader_message_offset: {
             cflags: ["-DBOARD_RECOVERY_BLDRMSG_OFFSET=%s"],
             export_cflags: ["-DBOARD_RECOVERY_BLDRMSG_OFFSET=%s"],
+        },
+    },
+}
+
+soong_config_module_type {
+    name: "target_alternative_futex_waiters",
+    module_type: "cc_defaults",
+    config_namespace: "blazeGlobalVars",
+    bool_variables: ["target_alternative_futex_waiters"],
+    properties: [
+        "cflags",
+        "cppflags",
+    ],
+}
+
+target_alternative_futex_waiters {
+    name: "target_alternative_futex_waiters_defaults",
+    soong_config_variables: {
+        target_alternative_futex_waiters: {
+            cflags: ["-DTARGET_ALTERNATIVE_FUTEX_WAITERS"],
+            cppflags: ["-DTARGET_ALTERNATIVE_FUTEX_WAITERS"],
         },
     },
 }
