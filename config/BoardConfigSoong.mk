@@ -50,7 +50,8 @@ SOONG_CONFIG_milkGlobalVars += \
     uses_egl_display_array \
     uses_legacy_fd_fbdev \
     needs_oplus_tag \
-    uses_oppo_camera
+    uses_oppo_camera \
+    uses_oplus_camera
 
 SOONG_CONFIG_NAMESPACES += milkNvidiaVars
 SOONG_CONFIG_milkNvidiaVars += \
@@ -78,6 +79,7 @@ SOONG_CONFIG_milkGlobalVars_uses_oppo_camera := $(TARGET_USES_OPPO_CAMERA)
 SOONG_CONFIG_milkQcomVars_supports_extended_compress_format := $(AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT)
 SOONG_CONFIG_milkQcomVars_uses_pre_uplink_features_netmgrd := $(TARGET_USES_PRE_UPLINK_FEATURES_NETMGRD)
 SOONG_CONFIG_milkGlobalVars_uses_legacy_fd_fbdev := $(TARGET_USES_LEGACY_FD_FBDEV)
+SOONG_CONFIG_milkGlobalVars_uses_oplus_camera := $(TARGET_USES_OPLUS_CAMERA)
 
 # Set default values
 BOOTLOADER_MESSAGE_OFFSET ?= 0
