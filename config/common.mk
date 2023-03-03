@@ -235,5 +235,4 @@ include vendor/milk/config/version.mk
 # Sounds (default)
 PRODUCT_PROPERTY_OVERRIDES := \
     ro.config.ringtone=vibe.ogg \
-    ro.config.notification_sound=Pikachu.ogg \
     ro.config.alarm_alert=MorningAlarm.ogg
