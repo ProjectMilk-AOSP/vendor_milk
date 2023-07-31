@@ -47,7 +47,8 @@ SOONG_CONFIG_milkGlobalVars += \
     target_trust_usb_control_path \
     target_trust_usb_control_enable \
     target_trust_usb_control_disable \
-    uses_egl_display_array
+    uses_egl_display_array \
+    uses_legacy_fd_fbdev
 
 SOONG_CONFIG_NAMESPACES += milkNvidiaVars
 SOONG_CONFIG_milkNvidiaVars += \
@@ -72,6 +73,7 @@ SOONG_CONFIG_milkGlobalVars_uses_egl_display_array := $(TARGET_USES_EGL_DISPLAY_
 SOONG_CONFIG_milkNvidiaVars_uses_nvidia_enhancements := $(NV_ANDROID_FRAMEWORK_ENHANCEMENTS)
 SOONG_CONFIG_milkQcomVars_supports_extended_compress_format := $(AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT)
 SOONG_CONFIG_milkQcomVars_uses_pre_uplink_features_netmgrd := $(TARGET_USES_PRE_UPLINK_FEATURES_NETMGRD)
+SOONG_CONFIG_milkGlobalVars_uses_legacy_fd_fbdev := $(TARGET_USES_LEGACY_FD_FBDEV)
 
 # Set default values
 BOOTLOADER_MESSAGE_OFFSET ?= 0
