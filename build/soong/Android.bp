@@ -1,4 +1,4 @@
-// LineageOS soong configs
+// ProjectMilk soong configs
 
 bootstrap_go_package {
     name: "soong-milk-generator",

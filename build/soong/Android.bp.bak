@@ -381,7 +381,7 @@ surfaceflinger_qcom_extensions {
 soong_config_module_type {
     name: "uses_legacy_fd_fbdev",
     module_type: "cc_defaults",
-    config_namespace: "blazeGlobalVars",
+    config_namespace: "milkGlobalVars",
     bool_variables: ["uses_legacy_fd_fbdev"],
     properties: ["cppflags"],
 }
@@ -398,7 +398,7 @@ uses_legacy_fd_fbdev {
 soong_config_module_type {
     name: "needs_oplus_tag",
     module_type: "cc_defaults",
-    config_namespace: "blazeGlobalVars",
+    config_namespace: "milkGlobalVars",
     bool_variables: ["needs_oplus_tag"],
     properties: ["cppflags"],
 }
@@ -414,7 +414,7 @@ needs_oplus_tag {
 soong_config_module_type {
     name: "uses_oppo_camera",
     module_type: "cc_defaults",
-    config_namespace: "blazeGlobalVars",
+    config_namespace: "milkGlobalVars",
     bool_variables: ["uses_oppo_camera"],
     properties: ["cppflags"],
 }
@@ -431,7 +431,7 @@ uses_oppo_camera {
 soong_config_module_type {
     name: "uses_oplus_camera",
     module_type: "cc_defaults",
-    config_namespace: "blazeGlobalVars",
+    config_namespace: "milkGlobalVars",
     bool_variables: ["uses_oplus_camera"],
     properties: ["cppflags"],
 }
@@ -448,7 +448,7 @@ uses_oplus_camera {
 soong_config_module_type {
     name: "uses_nothing_camera",
     module_type: "cc_defaults",
-    config_namespace: "blazeGlobalVars",
+    config_namespace: "milkGlobalVars",
     bool_variables: ["uses_nothing_camera"],
     properties: ["cppflags"],
 }
@@ -465,7 +465,7 @@ uses_nothing_camera {
 soong_config_module_type {
     name: "camera_needs_miui_camera_mode_support",
     module_type: "cc_defaults",
-    config_namespace: "blazeGlobalVars",
+    config_namespace: "milkGlobalVars",
     bool_variables: ["camera_needs_miui_camera_mode_support"],
     properties: ["cppflags"],
 }
@@ -482,7 +482,7 @@ camera_needs_miui_camera_mode_support {
 soong_config_module_type {
     name: "camera_needs_camera_needs_depth_sensor_override",
     module_type: "cc_defaults",
-    config_namespace: "blazeGlobalVars",
+    config_namespace: "milkGlobalVars",
     bool_variables: ["camera_needs_camera_needs_depth_sensor_override"],
     properties: ["cppflags"],
 }
