@@ -57,6 +57,7 @@ SOONG_CONFIG_milkGlobalVars += \
     uses_nothing_camera \
     needs_camera_boottime \
     camera_needs_client_info_lib \
+    camera_needs_client_info
 
 SOONG_CONFIG_NAMESPACES += milkNvidiaVars
 SOONG_CONFIG_milkNvidiaVars += \
@@ -91,6 +92,7 @@ SOONG_CONFIG_milkGlobalVars_uses_oplus_camera := $(TARGET_USES_OPLUS_CAMERA)
 SOONG_CONFIG_milkGlobalVars_uses_nothing_camera := $(TARGET_USES_NOTHING_CAMERA)
 SOONG_CONFIG_milkGlobalVars_needs_camera_boottime := $(TARGET_CAMERA_BOOTTIME_TIMESTAMP)
 SOONG_CONFIG_milkGlobalVars_camera_needs_client_info_lib := $(TARGET_CAMERA_NEEDS_CLIENT_INFO_LIB)
+SOONG_CONFIG_milkGlobalVars_camera_needs_client_info := $(TARGET_CAMERA_NEEDS_CLIENT_INFO)
 
 # Set default values
 BOOTLOADER_MESSAGE_OFFSET ?= 0
