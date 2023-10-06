@@ -1,19 +1,19 @@
 # Required packages
 PRODUCT_PACKAGES += \
-    Aperture \
-    ThemePicker \
+  #  Aperture \
+  #  ThemePicker \
     ThemesStub \
     TouchGestures \
-    RepainterServicePriv \
+  #  RepainterServicePriv \
     BlazeWallpaperStub
 
 # GameSpace
-PRODUCT_PACKAGES += \
-    GameSpace
+# PRODUCT_PACKAGES += \
+ #   GameSpace
 
 # ParallelSpace
-PRODUCT_PACKAGES += \
-    ParallelSpace
+# PRODUCT_PACKAGES += \
+ #   ParallelSpace
 
 # Combined icons
 PRODUCT_PACKAGES += \
