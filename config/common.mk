@@ -219,7 +219,7 @@ PRODUCT_EXTRA_RECOVERY_KEYS += \
 #$(call inherit-product, vendor/milk/config/themes.mk)
 
 # ThemeOverlays
-include packages/overlays/Themes/themes.mk
+#include packages/overlays/Themes/themes.mk
 
 #Face Unlock
 #TARGET_FACE_UNLOCK_SUPPORTED ?= true
