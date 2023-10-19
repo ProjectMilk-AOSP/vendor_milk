@@ -8,8 +8,8 @@ PRODUCT_PACKAGES += \
     BlazeWallpaperStub
 
 # GameSpace
-# PRODUCT_PACKAGES += \
- #   GameSpace
+PRODUCT_PACKAGES += \
+    GameSpace
 
 # ParallelSpace
 # PRODUCT_PACKAGES += \
