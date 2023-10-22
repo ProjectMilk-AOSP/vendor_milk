@@ -214,7 +214,7 @@ PRODUCT_EXTRA_RECOVERY_KEYS += \
     vendor/milk/build/target/product/security/milk
 
 # Themes
-$(call inherit-product, vendor/blaze/config/themes.mk)
+$(call inherit-product, vendor/milk/config/themes.mk)
 
 # ThemeOverlays
 include packages/overlays/Themes/themes.mk
