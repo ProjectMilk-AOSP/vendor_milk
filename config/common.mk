@@ -230,12 +230,12 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.biometrics.face.xml
 endif
 
-include vendor/milk/config/version.mk
-
 # Sounds (default)
 PRODUCT_PROPERTY_OVERRIDES := \
     ro.config.ringtone=vibe.ogg \
     ro.config.alarm_alert=MorningAlarm.ogg
 
 # Packages
-include vendor/blaze/config/packages.mk
+include vendor/milk/config/packages.mk
+
+include vendor/milk/config/version.mk
