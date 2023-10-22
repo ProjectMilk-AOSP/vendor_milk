@@ -171,7 +171,7 @@ PRODUCT_SYSTEM_PROPERTIES += \
 
 # Clean up packages cache to avoid wrong strings and resources
 PRODUCT_COPY_FILES += \
-    vendor/blaze/prebuilt/common/bin/clean_cache.sh:system/bin/clean_cache.sh
+    vendor/milk/prebuilt/common/bin/clean_cache.sh:system/bin/clean_cache.sh
 
 # SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += \
