@@ -1,2 +1,2 @@
-# Include LineageOS versions
-include $(TOPDIR)vendor/lineage/build/core/main_version.mk
+# Include Project Milk versions
+include $(TOPDIR)vendor/milk/build/core/main_version.mk
